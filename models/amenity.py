@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Class Amenity that inherits from BaseModel"""
+"""Class Amenity which inherits data from BaseModel"""
 from models.base_model import BaseModel
 
 
