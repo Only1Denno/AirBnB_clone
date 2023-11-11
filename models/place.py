@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Class Place that inherits from BaseModel"""
+"""Class Place that imports the BaseModel """
 from models.base_model import BaseModel
 
-
+""" Defines the Place class, inheriting from BaseModel """
 class Place(BaseModel):
-    """class Place"""
+    """ class attributes for Place """
     city_id = ""
     user_id = ""
     name = ""

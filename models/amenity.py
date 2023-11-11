@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Class Amenity which inherits data from BaseModel"""
+"""Class Amenity which imports the BaseModel class from models.base_model"""
 from models.base_model import BaseModel
 
-
+""" Defines a new class Amenity that inherits from BaseModel """
 class Amenity(BaseModel):
-    """class Amenity"""
+    """ initialize a class attribute 'name' with empty string'
     name = ""
