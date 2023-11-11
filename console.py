@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """Defines the HBnB console."""
-import cmd
 import re
+import cmd
 from shlex import split
-from models import storage
-from models.base_model import BaseModel
-from models.user import User
-from models.state import State
-from models.city import City
-from models.place import Place
-from models.amenity import Amenity
 from models.review import Review
+from models import storage
+from models.city import City
+from models.amenity import Amenity
+from models.state import State
+from models.base_model import BaseModel
+from models.place import Place
+from models.user import User
 
 
 def parse(arg):
@@ -32,10 +32,6 @@ def parse(arg):
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the HolbertonBnB command interpreter.
-    Attributes:
-        prompt (str): The command prompt.
-    """
 
     prompt = "(hbnb) "
     __classes = {
@@ -49,9 +45,8 @@ class HBNBCommand(cmd.Cmd):
     }
 
     def emptyline(self):
-        """Do nothing upon receiving an empty line."""
-        pass
-
+        """
+        emptyline
     def default(self, arg):
         """Default behavior for cmd module when input is invalid"""
         argdict = {
